@@ -22,10 +22,6 @@ app.use(express.json()); // allow us to parse incoming request with JSON payLoad
 app.use(cookieParser()); // allow us toh parse incoming cookies
 
 
-app.get('/', (req,res) =>{
-    res.send("home")
-})
-
 app.use('/api/auth', authRoutes)
 
 // for deployment
